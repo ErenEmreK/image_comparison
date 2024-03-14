@@ -83,6 +83,7 @@ def load_and_preprocess_data(train_data_dir, test_data_dir, batch_size=5):
         img_width, img_height = None, None  # Initialize variables
 
         for pair in pair_paths:
+            
             try:
                 # Use the size of the first image in the pair to determine the size
                 first_image = load_img(pair[0], target_size = target_size)  # Access the first path of the first element in the pair
