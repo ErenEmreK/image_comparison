@@ -1,0 +1,5 @@
+siamese.ipynb ----->
+
+try saving siamese models as h5 files
+write image dataframes into pkl or csv to reduce time
+
