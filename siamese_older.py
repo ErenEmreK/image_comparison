@@ -211,7 +211,3 @@ if __name__ == "__main__":
     
     main()
     
-
-#TODO make full data 
-#image size
-#[array(0.5821585, dtype=float32), array(0.77807343, dtype=float32)]

@@ -2,7 +2,7 @@ import tensorflow as tf
 from keras.preprocessing.image import load_img, img_to_array
 from keras import config
 import numpy as np
-from attempt11 import image_size, save_file
+from siamese_older import image_size, save_file
 
 # Load the model
 config.enable_unsafe_deserialization()
@@ -12,6 +12,7 @@ siamese_model = tf.keras.models.load_model(save_file, compile=False)
 
 # Function to load and preprocess a pair of images
 def load_and_preprocess_pair(image1_path, image2_path, target_size=image_size):
+    #TODO up to date this regarding last preprocess function
     img1 = img_to_array(load_img(image1_path, target_size=target_size)) / 255.0
     img2 = img_to_array(load_img(image2_path, target_size=target_size)) / 255.0
 
